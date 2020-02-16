@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import ReactDOM from "react-dom";
+// import Cookie from "js-cookie";
+// import axios from "axios";
+
+import "./App.scss";
+
+import NavigationBar from "./navigation/navigation-bar";
+import Home from "./pages/home";
+import Videos from "./pages/videos";
+import Projects from "./pages/projects";
+import Posts from "./pages/posts";
+import AboutMe from "./pages/about-me";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <NavigationBar />
+        <div>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/videos" component={Videos} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/posts" component={Posts} />
+            <Route exact path="/about-me" component={AboutMe} />
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
 }
