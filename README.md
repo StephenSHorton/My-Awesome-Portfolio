@@ -3,4 +3,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## My Awesome Portfolio
 
 Welcome, this is the source code to my portfolio
-(I built this page in React.js)
+(Built in React.js)
