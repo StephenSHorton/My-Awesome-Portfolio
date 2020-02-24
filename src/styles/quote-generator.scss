@@ -1,0 +1,13 @@
+.QuoteGenerator-Container {
+  display: grid;
+  grid-template-columns: 1fr, 2fr, 1fr;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .QuoteGenerator-Container {
+    margin-top: 20px;
+    margin-bottom: 20;
+  }
+}

@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import Cookie from "js-cookie";
 // import axios from "axios";
 
-import "./App.scss";
+import "./styles/main.scss";
 
 import NavigationBar from "./navigation/navigation-bar";
 import Home from "./pages/home";
